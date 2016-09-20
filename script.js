@@ -80,14 +80,14 @@ var submitted = false;
       var message = 'you are <span>' + age + '</span> years old!\n You are old enough to drive, vote and drink!';
       var secondaryMessage = '3 out of 3, Congratulations!'
     }else if( age > 16 && age < 19 ){
-      var message = 'you are <span>' + age + '</span> years old!\n You are old enough to drive and vote but can\'t drink!';
+      var message = 'you are <span>' + age + '</span> years old!\n You are old enough to drive and vote but  <span class="underline">can\'t</span> drink!';
       var secondaryMessage = '2 out of 3, so close, sorry!';
     }else if( age === 16 ){
-      var message = 'you are <span>' + age + '</span> years old!\n You are old enough to drive but can\'t drink or vote!';
+      var message = 'you are <span>' + age + '</span> years old!\n You are old enough to drive but  <span class="underline">can\'t</span> drink or vote!';
       var secondaryMessage = '1 out of 3, damn, sorry!';
     }else{
       console.log(age);
-      var message = 'you are <span>' + age + '</span> years old!\n You are not old enough to drive, drink or vote!';
+      var message = 'you are <span>' + age + '</span> years old!\n You are <span class="underline">not</span> old enough to drive, drink or vote!';
       var secondaryMessage = 'you can\'t do anything, sorry!';
 
 
