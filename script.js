@@ -59,8 +59,8 @@ var submitted = false;
     }else{
       // change age to number
       //
-      age = parseInt(age);
-
+      // age = parseInt(age);
+      age = age * 1;
 
       //ask to try again if a number is not entered
       if(isNaN(age) || typeof(age) === 'string'){
@@ -118,7 +118,7 @@ var submitted = false;
 
   function restart(){
     $resultMessage.text('how old are you?');
-    $secondaryMessage.show().text('enter age as number');
+    $secondaryMessage.show().text('enter age as a number');
     $ageInput.show('fast');
     console.log($resultMessage);
   }
